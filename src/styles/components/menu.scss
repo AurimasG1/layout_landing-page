@@ -2,7 +2,7 @@
   display: flex;
   align-items: start;
 
-  @include onDesktop {
+  @include on-desktop {
     align-items: center;
   }
 
@@ -11,7 +11,7 @@
     transition: opacity 0.3s;
     opacity: 0;
 
-    @include onDesktop {
+    @include on-desktop {
       display: block;
     }
   }
@@ -20,12 +20,13 @@
     display: block;
     width: max-content;
     margin: 0;
+
     @extend %cinzel;
     @include text-decoration($fw-b, $fz-4xs, $fz-m, $color-1);
-
     &--tel {
       text-decoration: none;
       transition: 0.3s;
+
       @extend %cursor;
 
       &:hover {
@@ -36,6 +37,7 @@
 
   &__icon {
     @extend %cursor;
+
     display: block;
     width: 18px;
     height: 18px;
@@ -43,7 +45,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include onTablet {
+    @include on-tablet {
       width: 24px;
       height: 24px;
     }
@@ -51,11 +53,11 @@
     &--margins {
       margin: 0 30px 0 0;
 
-      @include onTablet {
+      @include on-tablet {
         margin: 0 63px 0 0;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         margin: 0 63px 0 20px;
       }
     }

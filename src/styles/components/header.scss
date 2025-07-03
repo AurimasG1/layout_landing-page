@@ -6,9 +6,11 @@
 
   &__container {
     box-sizing: border-box;
+
     @extend %container;
     @extend %paddings-sides;
     @extend %padding-for-header;
+
     height: 100vh;
   }
 
@@ -17,7 +19,7 @@
     justify-content: space-between;
     align-items: start;
 
-    @include onDesktop {
+    @include on-desktop {
       align-items: center;
     }
   }
@@ -25,26 +27,28 @@
   &__title {
     @extend %cinzel;
     @include text-decoration($fw-b, $fz-3xl, $fz-3xl, $color-1);
+
     margin: 0;
+
     letter-spacing: $ls-min;
     text-align: center;
 
-    @include onTablet {
+    @include on-tablet {
       @include text-decoration($fw-b, $fz-5xl, $fz-5xl, $color-1);
     }
 
-    @include onDesktop {
+    @include on-desktop {
       @include text-decoration($fw-b, $fz-6xl, $fz-6xl, $color-1);
     }
 
     &--margin-top {
       margin-top: 129px;
 
-      @include onTablet {
+      @include on-tablet {
         margin-top: 141px;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         margin-top: 83px;
       }
     }

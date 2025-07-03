@@ -1,10 +1,10 @@
 %cinzel {
-  font-family: 'Cinzel', serif;
+  font-family: Cinzel, serif;
   font-style: normal;
 }
 
 %roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
 }
 
@@ -16,11 +16,11 @@
 %padding-for-header {
   padding-top: 25px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-top: 50px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding-top: 14px;
   }
 }
@@ -29,27 +29,28 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-left: 72px;
     padding-right: 72px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 
 %cursor {
-  cursor: url(../images/ui-kit/cursor.svg), auto;
+  cursor: url(/src/images/ui-kit/cursor.svg), auto;
 }
 
 %subtitle {
   @include text-decoration($fw-b, $fz-xl, $fz-xl, $color-6);
+
   margin: 0;
   letter-spacing: $ls-min;
 
-  @include onTablet {
+  @include on-tablet {
     @include text-decoration($fw-b, $fz-4xl, $fz-4xl, $color-6);
   }
 }
