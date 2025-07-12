@@ -1,17 +1,18 @@
 .nav {
   background-color: $color-4;
+  background: rgba(255, 0, 0, 0.2); // light red
   box-sizing: border-box;
 
   &__container {
-    box-sizing: border-box;
     @extend %container;
     @extend %paddings-sides;
     @extend %padding-for-header;
+
     height: 100vh;
-    overflow-y: scroll hidden;
   }
 
   &__top {
+    // @extend %padding-for-nav;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -48,9 +49,11 @@
 
   &__link {
     display: block;
+
     @extend %cinzel;
     @extend %cursor;
     @include text-decoration($fw-b, $fz-xs, $fz-xs, $color-1);
+
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: $ls-plus;
@@ -68,6 +71,7 @@
   &__description {
     @extend %cinzel;
     @include text-decoration($fw-b, $fz-4xs, $fz-m, $color-1);
+
     display: block;
     width: max-content;
     margin: 0;
@@ -85,6 +89,7 @@
 
     &--tel {
       @extend %cursor;
+
       text-decoration: none;
     }
 

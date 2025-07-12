@@ -1,0 +1,38 @@
+.about-us {
+  @extend %cinzel;
+  &__container {
+    @extend %container;
+    padding: 2rem 1.5rem;
+  }
+
+  &__title {
+    @extend %subtitle;
+    margin-bottom: 1.5rem;
+  }
+  &__subtitle {
+    color: $color-2;
+    font-weight: $fw-b;
+    font-size: $fz-6xs;
+  }
+  &__hours {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__hours-item {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #e0e0e0; // optional, nice divider
+  }
+  &__hours-time {
+    font-weight: $fw-b; // or use your BEM: about-us__bold
+    min-width: 150px;
+    max-width: 200px;
+  }
+  &__hours-days {
+    font-weight: $fw-m; // or use your BEM: about-us__medium
+
+    color: #555; // optional for contrast
+  }
+}

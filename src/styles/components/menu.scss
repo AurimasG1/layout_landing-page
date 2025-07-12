@@ -10,10 +10,6 @@
     display: none;
     transition: opacity 0.3s;
     opacity: 0;
-
-    @include on-desktop {
-      display: block;
-    }
   }
 
   &__description {
@@ -64,10 +60,12 @@
 
     &--phone {
       background-image: url(/src/images/ui-kit/phone.svg);
+      &:hover {
+        background-size: 120%;
+      }
     }
 
     &--menu-opener {
-      transition: background-image 0.3s;
       background-image: url(/src/images/ui-kit/menu_1.svg);
 
       &:hover {
@@ -77,6 +75,10 @@
 
     &--closer {
       background-image: url(/src/images/ui-kit/close.svg);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: rotate(100deg) scale(1.3);
+      }
     }
   }
 }

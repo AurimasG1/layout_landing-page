@@ -5,8 +5,6 @@
   background-position: center;
 
   &__container {
-    box-sizing: border-box;
-
     @extend %container;
     @extend %paddings-sides;
     @extend %padding-for-header;

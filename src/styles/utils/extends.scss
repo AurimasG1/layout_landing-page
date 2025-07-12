@@ -25,6 +25,18 @@
   }
 }
 
+%padding-for-nav {
+  padding-top: 25px;
+
+  @include on-tablet {
+    padding-top: 50px;
+  }
+
+  @include on-desktop {
+    padding-top: 22px;
+  }
+}
+
 %paddings-sides {
   padding-left: 20px;
   padding-right: 20px;
