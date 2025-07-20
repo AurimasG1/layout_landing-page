@@ -1,0 +1,30 @@
+.icon {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  background-position: center;
+  background-size: cover;
+
+  @include on-tablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--phone {
+    background-image: url(/src/images/ui-kit/phone.svg);
+  }
+
+  &--menu {
+    background-image: url(/src/images/ui-kit/menu_1.svg);
+
+    &:hover {
+      background-image: url(/src/images/ui-kit/menu_2.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(/src/images/ui-kit/close.svg);
+  }
+}

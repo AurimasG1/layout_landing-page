@@ -1,32 +1,33 @@
 .page {
-  font-family: Cinzel, Times, serif;
   scroll-behavior: smooth;
+  font-family: Cinzel, Times, serif;
   line-height: 27px;
 
   &__body {
-    margin: 0;
     min-width: 320px;
+    margin: 0;
   }
 
-  &__nav {
+  &__menu {
+    pointer-events: none;
+
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     transform: translateX(-100%);
-    transition: transform 0.3s;
+
+    opacity: 0;
+
+    transition: all 0.3s;
+
     &:target {
+      pointer-events: all;
       transform: translateX(0);
+      opacity: 1;
     }
   }
-  &:has(.page__nav:target),
-  &__body:has(.page__nav:target) {
+  &:has(.page__menu:target) {
     overflow: hidden;
-  }
-
-  &__footer {
-    position: sticky;
-    z-index: -1;
-    bottom: 0;
   }
 }

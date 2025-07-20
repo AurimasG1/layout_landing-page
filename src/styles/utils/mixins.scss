@@ -11,8 +11,8 @@
 }
 
 @mixin text-decoration($weight, $size, $lh, $color) {
-  font-weight: $weight;
   font-size: $size;
+  font-weight: $weight;
   line-height: $lh;
   color: $color;
 }

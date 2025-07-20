@@ -1,0 +1,89 @@
+.contacts {
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    @include grid-container;
+
+    row-gap: 48px;
+    justify-items: flex-start;
+  }
+
+  &__info {
+    display: flex;
+    grid-column: span 2;
+    flex-direction: column;
+    gap: 48px;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 7;
+      flex-direction: row;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+  }
+
+  &__contact-text {
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__contact-link {
+    font-weight: 700;
+    color: $color-8;
+
+    @include hover(color, $color-2);
+  }
+
+  &__form {
+    display: flex;
+    grid-column: span 2;
+    flex-direction: column;
+    width: 100%;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__form-field {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 14px 11px;
+
+    color: $color-5;
+
+    background-color: $color-8;
+
+    &:hover {
+      color: $color-6;
+    }
+
+    &:focus {
+      border: 1px solid $color-6;
+      color: $color-6;
+    }
+
+    &--textarea {
+      resize: none;
+      height: 116px;
+      margin-bottom: 32px;
+    }
+  }
+}

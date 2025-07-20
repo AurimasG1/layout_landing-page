@@ -1,39 +1,62 @@
 .about-us {
   @include grid-container;
 
-  &__title {
-    @extend %subtitle;
+  row-gap: 32px;
 
-    margin-bottom: 1.5rem;
+  &__titles {
+    grid-column: span 1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__content {
+    display: flex;
+    grid-column: span 2;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 7;
+    }
   }
   &__subtitle {
-    font-size: $fz-6xs;
-    font-weight: $fw-b;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 140%;
     color: $color-2;
   }
-  &__hours {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+  &__address {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__week-plan {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+  &__week {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     list-style: none;
   }
-  &__hours-item {
+  &__holidays {
     display: flex;
-    align-items: baseline;
-    border-bottom: 1px solid #e0e0e0; // optional, nice divider
+    flex-direction: column;
   }
-  &__hours-time {
-    font-weight: $fw-b; // or use your BEM: about-us__bold
-  }
-  &__hours-days {
-    font-weight: $fw-m; // or use your BEM: about-us__medium
-    color: #555; // optional for contrast
-  }
-  &__text-subtitle {
-    font-size: $fz-s;
-    letter-spacing: $ls-normal;
-    font-weight: $fw-b;
-    line-height: $fz-l;
-    margin-bottom: 1rem;
+  &__time {
+    font-weight: 700;
   }
 }

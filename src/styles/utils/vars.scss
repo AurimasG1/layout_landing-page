@@ -37,7 +37,6 @@ $ls-plus: 2px;
 /* width */
 $tablet-width: 744px;
 $desktop-width: 1260px;
-
 $transition-duration: 0.5s;
 $effectDuration: 0.3s;
 
@@ -46,16 +45,20 @@ picture,
 video,
 canvas,
 svg {
+  user-select: none;
   display: block;
   max-width: 100%;
-  user-select: none;
 }
 
 button {
-  display: inline-block;
   cursor: pointer;
-  border: none;
-  background: none;
+
+  display: inline-block;
+
   padding: 0;
+  border: none;
+
   color: inherit;
+
+  background: none;
 }

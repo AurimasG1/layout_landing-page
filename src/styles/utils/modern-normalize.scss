@@ -88,9 +88,9 @@ Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -130,10 +130,10 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0; /* 2 */
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
 }
 
 /**
@@ -196,8 +196,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+  -webkit-appearance: button; /* 1 */
 }
 
 /*
@@ -211,4 +211,9 @@ Add the correct display in Chrome and Safari.
 
 summary {
   display: list-item;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }

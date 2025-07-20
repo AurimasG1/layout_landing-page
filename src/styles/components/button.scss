@@ -1,0 +1,18 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 56px;
+
+  font-weight: 700;
+  color: $color-1;
+
+  background-color: $color-2;
+
+  @include hover(background-color, $color-3);
+}
