@@ -40,10 +40,6 @@
     grid-row: span 3;
     grid-template-rows: subgrid;
 
-    &:last-child .explore__card-description {
-      margin-bottom: 0;
-    }
-
     @include on-tablet {
       display: grid;
       grid-column: 2/-2;
@@ -80,5 +76,8 @@
     @include on-desktop {
       margin: 0;
     }
+  }
+  &__card:last-child .explore__card-description {
+    margin-bottom: 0;
   }
 }
