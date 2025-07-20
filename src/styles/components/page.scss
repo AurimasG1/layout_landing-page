@@ -1,9 +1,11 @@
 .page {
+  font-family: Cinzel, Times, serif;
   scroll-behavior: smooth;
+  line-height: 27px;
 
   &__body {
     margin: 0;
-    box-sizing: border-box;
+    min-width: 320px;
   }
 
   &__nav {
@@ -13,19 +15,18 @@
     left: 0;
     transform: translateX(-100%);
     transition: transform 0.3s;
-    height: 100vh;
     &:target {
       transform: translateX(0);
     }
   }
-
-  &:has(.page__nav:target) {
+  &:has(.page__nav:target),
+  &__body:has(.page__nav:target) {
     overflow: hidden;
   }
 
   &__footer {
     position: sticky;
-    bottom: 0;
     z-index: -1;
+    bottom: 0;
   }
 }

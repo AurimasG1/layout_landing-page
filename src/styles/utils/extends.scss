@@ -9,8 +9,21 @@
 }
 
 %container {
+  box-sizing: border-box;
   max-width: $desktop-width;
   margin: 0 auto;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+
+  @include on-tablet {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+
+  @include on-desktop {
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
+  }
 }
 
 %padding-for-header {
@@ -22,33 +35,6 @@
 
   @include on-desktop {
     padding-top: 14px;
-  }
-}
-
-%padding-for-nav {
-  padding-top: 25px;
-
-  @include on-tablet {
-    padding-top: 50px;
-  }
-
-  @include on-desktop {
-    padding-top: 22px;
-  }
-}
-
-%paddings-sides {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @include on-tablet {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-
-  @include on-desktop {
-    padding-left: 120px;
-    padding-right: 120px;
   }
 }
 
@@ -67,10 +53,52 @@
   }
 }
 
+%description {
+  @include text-decoration($fw-m, $fz-4xs, $fz-m, $color-6);
+
+  margin: 0;
+  letter-spacing: $ls-normal;
+}
+
+%subtitle-2 {
+  @include text-decoration($fw-b, $fz-4xs, $fz-m, $color-2);
+
+  margin: 0;
+  letter-spacing: $ls-normal;
+}
+
 %hover-pic {
   transition: 0.3s;
-
-  &:hover {
+  h &:hover {
     box-shadow: 0 0 5px 3px $color-4;
+  }
+}
+
+%button {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  background-color: $color-2;
+  color: $color-1;
+  padding: 1em 4.5em;
+  border-radius: 6px;
+  box-shadow:
+    0 10px 20px $color-2,
+    0 6px 6px $color-2,
+    0 0 100px -10px $color-2;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 14px 28px rgb(236, 0, 63, 0.25),
+      0 10px 10px rgb(236, 0, 63, 0.22),
+      0 0 120px -10px $color-4;
+    background-color: #ae1c23;
+  }
+  &:active {
+    background-color: #eb343d;
   }
 }

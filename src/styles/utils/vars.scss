@@ -31,8 +31,31 @@ $color-8: #f8f8fa;
 
 /* letter-spacing */
 $ls-min: -1.5px;
+$ls-normal: 0;
 $ls-plus: 2px;
 
 /* width */
 $tablet-width: 744px;
 $desktop-width: 1260px;
+
+$transition-duration: 0.5s;
+$effectDuration: 0.3s;
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  color: inherit;
+}

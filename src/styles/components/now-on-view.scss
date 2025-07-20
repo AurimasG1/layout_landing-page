@@ -1,0 +1,56 @@
+.now-on-view {
+  @extend %cinzel;
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    &--main {
+      text-align: center;
+      margin: 0 auto;
+      // width: 324px;
+      &-title {
+        @extend %subtitle;
+      }
+      &-description {
+        @extend %description;
+      }
+    }
+    &-subtitle {
+      @extend %subtitle-2;
+    }
+    &-description {
+      @extend %description;
+    }
+  }
+  &__content {
+    &-1,
+    &-2,
+    &-3 {
+      width: minmax(88px, 672px);
+      height: minmax(87px, 320px);
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-remove {
+    @media (min-width: 744px) {
+      display: none;
+    }
+    @media (min-width: 1260px) {
+      display: block;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 8.75rem;
+  }
+  &__button--text {
+    @extend %button;
+  }
+}

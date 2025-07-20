@@ -33,10 +33,9 @@
     ></script>
   </head>
   <body class="page__body">
-    <!-- <---- Nav ---->
-
     <header class="header">
       <div class="header__container">
+        <!-- Start of Nav ---->
         <nav
           class="nav page__nav"
           id="navigation"
@@ -53,12 +52,11 @@
                   class="logo__img"
                 />
               </a>
-              <div class="menu">
-                <a
-                  href="#"
-                  class="menu__icon menu__icon--closer"
-                ></a>
-              </div>
+
+              <a
+                href="#"
+                class="nav__icon nav__icon--closer"
+              ></a>
             </div>
 
             <ul class="nav__list">
@@ -91,7 +89,7 @@
 
               <li class="nav__item nav__item--margin-bottom">
                 <a
-                  href="#explore-online"
+                  href="#explore"
                   class="nav__link"
                 >
                   Explore Online
@@ -136,6 +134,7 @@
             </div>
           </div>
         </nav>
+        <!-- End of Nav ---->
         <div class="header__top">
           <a
             href="#"
@@ -148,35 +147,38 @@
             />
           </a>
 
-          <div class="menu">
-            <div class="menu__phones">
-              <p class="menu__description">The Met Fifth Avenue</p>
+          <div class="header__top__buttons">
+            <a
+              href="tel:+1 212-535-7710"
+              class="header__top__icon header__top__icon--margins header__top__icon--phone header__top__buttons--call"
+            ></a>
+            <div class="header__top__buttons--numbers">
+              <p class="header__description">
+                The Met Fifth Avenue
 
-              <a
-                href="tel:+1 212-535-7710"
-                class="menu__description menu__description--tel"
-              >
-                +1 212-535-7710
-              </a>
+                <a
+                  href="tel:+1 212-535-7710"
+                  class="header__description header__description--tel"
+                >
+                  +1 212-535-7710
+                </a>
+              </p>
 
-              <p class="menu__description">The Met Cloisters</p>
-
-              <a
-                href="tel:+1 212-535-7710"
-                class="menu__description menu__description--tel"
-              >
-                +1 212-923-3700
-              </a>
+              <p class="header__description">
+                The Met Cloisters
+                <br />
+                <a
+                  href="tel:+1 212-923-3700"
+                  class="header__description header__description--tel"
+                >
+                  +1 212-923-3700
+                </a>
+              </p>
             </div>
 
             <a
-              href="tel:+1 212-535-7710"
-              class="menu__icon menu__icon--margins menu__icon--phone"
-            ></a>
-
-            <a
               href="#navigation"
-              class="menu__icon menu__icon--menu-opener"
+              class="header__top__icon header__top__icon--menu-opener"
             ></a>
           </div>
         </div>
@@ -189,73 +191,202 @@
       </div>
     </header>
     <main class="main">
-      <section
-        class="about-us"
-        id="about-us"
-      >
-        <div class="about-us__container">
-          <div class="grid">
-            <div
-              class="grid__item grid__item--phone-1-2 grid__item--tablet-1-3 grid__item--desktop-1-5"
+      <div class="container">
+        <section
+          class="about-us"
+          id="about-us"
+        >
+          <div
+            class="grid__item gridm__item--row grid__item--phone-1-6 grid__item--tablet-1-3 grid__item--desktop-1-5"
+          >
+            <h3 class="about-us__subtitle">Plan your visit</h3>
+            <h2 class="section-title">Museum hours</h2>
+          </div>
+          <div
+            class="grid__item grid__item--row grid__item--phone-1-3 grid__item--tablet-4-6 grid__item--desktop-6-12"
+          >
+            <h4
+              class="about-us__text-subtitle about-us__text-subtitle--margin-bottom-1"
             >
-              <h2 class="about-us__subtitle">Plan your visit</h2>
-              <h2 class="about-us__title">Museum hours</h2>
-            </div>
-            <div
-              class="grid__item grid__item--phone-1-2 grid__item--tablet-4-6 grid__item--desktop-6-12"
+              The Met Fifth Avenue
+            </h4>
+
+            <ul class="about-us__hours">
+              <li class="about-us__hours-item">
+                <div class="about-us__hours-time">10 am – 5 pm</div>
+                <div class="about-us__hours-days">Sun, Mon, Tue, Thu</div>
+              </li>
+              <li class="about-us__hours-item">
+                <div class="about-us__hours-time">10 am – 9 pm</div>
+                <div class="about-us__hours-days">Fri, Sat</div>
+              </li>
+              <li class="about-us__hours-item">
+                <div class="about-us__hours-time">Closed</div>
+                <div class="about-us__hours-days">Wed</div>
+              </li>
+            </ul>
+
+            <p class="about-us__text">Closed on</p>
+            <p class="about-us__text">
+              Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+            </p>
+          </div>
+          <div
+            class="grid__item grid__item--row-2 grid__item--phone-4-6 grid__item--tablet-4-6 grid__item--desktop-6-12"
+          >
+            <h4
+              class="about-us__text-subtitle about-us__text-subtitle--margin-bottom-1"
             >
-              <h4
-                class="about-us__text-subtitle about-us__text-subtitle--margin-bottom-1"
-              >
-                The Met Fifth Avenue
-              </h4>
+              The Met Fifth Avenue
+            </h4>
 
-              <ul class="about-us__hours">
-                <li class="about-us__hours-item">
-                  <div class="about-us__hours-time">10 am – 5 pm</div>
-                  <div class="about-us__hours-days">Sun, Mon, Tue, Thu</div>
-                </li>
-                <li class="about-us__hours-item">
-                  <div class="about-us__hours-time">10 am – 9 pm</div>
-                  <div class="about-us__hours-days">Fri, Sat</div>
-                </li>
-                <li class="about-us__hours-item">
-                  <div class="about-us__hours-time">Closed</div>
-                  <div class="about-us__hours-days">Wed</div>
-                </li>
-              </ul>
+            <ul class="about-us__hours">
+              <li class="about-us__hours-item">
+                <div class="about-us__hours-time">10 am – 4.30 pm</div>
+                <div class="about-us__hours-days">Thu - Tue</div>
+              </li>
+              <li class="about-us__hours-item">
+                <div class="about-us__hours-time">Closed</div>
+                <div class="about-us__hours-days">Wed</div>
+              </li>
+            </ul>
 
-              <p class="about-us__text">Closed on</p>
-              <p class="about-us__text">
-                Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+            <p class="about-us__text about-us__bold">Closed on</p>
+            <p class="about-us__text">Thanksgiving Day, Dec 25, Jan 1</p>
+          </div>
+        </section>
+        <section
+          class="now-on-view page__now-on-view"
+          id="now-on-view"
+        >
+          <div class="now-on-view__container">
+            <div class="now-on-view__title--main">
+              <h2 class="now-on-view__title--main-title">Now on View</h2>
+              <p class="now-on-view__title--main-description">
+                Explore exhibition gallery guides, videos, articles, and more.
               </p>
             </div>
-            <div
-              class="grid__item grid__item--phone-1-2 grid__item--tablet-4-6 grid__item--desktop-6-12"
-            >
-              <h4
-                class="about-us__text-subtitle about-us__text-subtitle--margin-bottom-1"
-              >
-                The Met Fifth Avenue
-              </h4>
-
-              <ul class="about-us__hours">
-                <li class="about-us__hours-item">
-                  <div class="about-us__hours-time">10 am – 4.30 pm</div>
-                  <div class="about-us__hours-days">Thu - Tue</div>
-                </li>
-                <li class="about-us__hours-item">
-                  <div class="about-us__hours-time">Closed</div>
-                  <div class="about-us__hours-days">Wed</div>
-                </li>
-              </ul>
-
-              <p class="about-us__text about-us__bold">Closed on</p>
-              <p class="about-us__text">Thanksgiving Day, Dec 25, Jan 1</p>
+            <div class="now-on-view__content-1 grid">
+              <img
+                src="./images/masters1.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-1-8 grid__item--tablet-1-3 grid__item--phone-1-3"
+              />
+              <img
+                src="./images/masters2.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-9-12 grid__item--tablet-4-6 grid__item--phone-4-6"
+              />
+            </div>
+            <div class="now-on-view__title">
+              <h3 class="now-on-view__title-subtitle">
+                A New Look at Old Masters
+              </h3>
+              <p class="now-on-view__title-description">
+                December 12, 2020 – Through Spring 2023
+              </p>
+            </div>
+            <div class="now-on-view__content-2 grid">
+              <img
+                src="./images/bodhi1.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-1-4 grid__item--tablet-1-3 grid__item--phone-1-2"
+              />
+              <img
+                src="./images/bodhi2.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-5-8 grid__item--tablet-4-6 grid__item--phone-3-4"
+              />
+              <img
+                src="./images/bodhi3.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img now-on-view-remove grid__item--desktop-9-12 grid__item--phone-5-6"
+              />
+            </div>
+            <div class="now-on-view__title">
+              <h3 class="now-on-view__title-subtitle">
+                Bodhisattvas of Wisdom, Compassion, and Power
+              </h3>
+              <p class="now-on-view__title-description">
+                March 27, 2021 – October 30, 2022
+              </p>
+            </div>
+            <div class="now-on-view__content-3 grid">
+              <img
+                src="./images/walt1.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-1-4 grid__item--tablet-1-3 grid__item--phone-1-3"
+              />
+              <img
+                src="./images/walt2.png"
+                alt="Now on View 1"
+                class="now-on-view__content-img grid__item--desktop-5-12 grid__item--tablet-4-6 grid__item--phone-4-6"
+              />
+            </div>
+            <div class="now-on-view__title">
+              <h3 class="now-on-view__title-subtitle">
+                Inspiring Walt Disney: The Animation of French Decorative Arts
+              </h3>
+              <p class="now-on-view__title-description">
+                December 10, 2021 – March 6, 2022
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="now-on-view__button">
+            <button>
+              <a class="now-on-view__button--text">View all exhibitions</a>
+            </button>
+          </div>
+        </section>
+        <section
+          class="explore"
+          id="explore"
+        >
+          <h2 class="section-title explore__title">More to Explore Online</h2>
+          <div class="explore__content">
+            <article class="explore__card">
+              <img
+                class="explore__card-image"
+                src="/src//images/more1.png"
+                alt="collections"
+              />
+              <h3 class="explore__card-title">Collection Areas</h3>
+              <p class="explore__card-description">
+                These collection areas study, exhibit, and care for the objects
+                in The Met collection.
+              </p>
+            </article>
+            <article class="explore__card">
+              <img
+                class="explore__card-image"
+                src="/src//images/more2.png"
+                alt="museum"
+              />
+
+              <h3 class="explore__card-title">Travel</h3>
+
+              <p class="explore__card-description">
+                Travel with The Met connects the Museum's wide and diverse
+                audience to art, inspiration, and historical perspective.
+              </p>
+            </article>
+            <article class="explore__card">
+              <img
+                class="explore__card-image"
+                src="/src//images/more3.png"
+                alt="gallery"
+              />
+
+              <h3 class="explore__card-title">Virtual group tours</h3>
+
+              <p class="explore__card-description">
+                Request a guided tour, reserve admission and lead your own small
+                group, or request a live virtual tour led by a Museum guide.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

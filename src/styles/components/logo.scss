@@ -1,7 +1,7 @@
 .logo {
-  display: block;
-
   @extend %cursor;
+
+  display: block;
 
   &--header {
     width: 64px;
