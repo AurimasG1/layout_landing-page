@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
 
-  @include onTablet {
+  @include on-tablet {
     height: 359px;
   }
 }

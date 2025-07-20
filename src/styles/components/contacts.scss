@@ -7,13 +7,13 @@
     @include grid-container;
 
     row-gap: 48px;
-    justify-items: flex-start;
   }
 
   &__info {
     display: flex;
     grid-column: span 2;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 48px;
 
     @include on-tablet {
@@ -41,7 +41,7 @@
 
   &__contact-link {
     font-weight: 700;
-    color: $color-8;
+    color: $color-7;
 
     @include hover(color, $color-2);
   }
@@ -66,9 +66,7 @@
     width: 100%;
     margin-bottom: 16px;
     padding: 14px 11px;
-
     color: $color-5;
-
     background-color: $color-8;
 
     &:hover {
@@ -76,13 +74,12 @@
     }
 
     &:focus {
-      border: 1px solid $color-6;
-      color: $color-6;
+      outline-color: $color-6;
     }
 
     &--textarea {
       resize: none;
-      height: 116px;
+      height: 144px;
       margin-bottom: 32px;
     }
   }

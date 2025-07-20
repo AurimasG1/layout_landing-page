@@ -33,7 +33,10 @@
     ></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header
+      class="header"
+      id="home"
+    >
       <div class="container">
         <div class="header__content">
           <div class="top-bar header__top">
@@ -122,7 +125,7 @@
               <li class="nav__item">
                 <a
                   class="nav__link"
-                  href="#about"
+                  href="#about-us"
                 >
                   About Us
                 </a>
@@ -140,7 +143,7 @@
               <li class="nav__item">
                 <a
                   class="nav__link"
-                  href="#explore-online"
+                  href="#explore"
                 >
                   Explore Online
                 </a>
@@ -422,42 +425,42 @@
                     New York, NY 10040
                   </a>
                 </div>
-                <form
-                  class="contacts__form"
-                  action="#"
-                  method="POST"
-                >
-                  <input
-                    class="contacts__form-field"
-                    name="name"
-                    type="text"
-                    placeholder="Name"
-                    required
-                  />
-
-                  <input
-                    class="contacts__form-field"
-                    name="email"
-                    type="email"
-                    placeholder="Email"
-                    required
-                  />
-
-                  <textarea
-                    name="message"
-                    placeholder="Message"
-                    class="contacts__form-field contacts__form-field--textarea"
-                    required
-                  ></textarea>
-
-                  <button
-                    class="button form__button"
-                    type="submit"
-                  >
-                    Send
-                  </button>
-                </form>
               </div>
+              <form
+                class="contacts__form"
+                action="#"
+                method="POST"
+              >
+                <input
+                  class="contacts__form-field"
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+
+                <input
+                  class="contacts__form-field"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  class="contacts__form-field contacts__form-field--textarea"
+                  required
+                ></textarea>
+
+                <button
+                  class="button form__button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
             </div>
           </section>
         </div>

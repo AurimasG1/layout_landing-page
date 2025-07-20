@@ -40,6 +40,10 @@
     grid-row: span 3;
     grid-template-rows: subgrid;
 
+    &:last-child .explore__card-description {
+      margin-bottom: 0;
+    }
+
     @include on-tablet {
       display: grid;
       grid-column: 2/-2;
@@ -72,5 +76,9 @@
   &__card-description {
     margin: 0 0 3rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    @include on-desktop {
+      margin: 0;
+    }
   }
 }
